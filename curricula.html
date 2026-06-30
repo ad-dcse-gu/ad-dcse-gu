@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Curricula | DCSE Portal | SCSE @ Galgotias University</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+:root{
+    --primary:#a41515;
+    --secondary:#c62828;
+    --dark:#222;
+    --light:#f6f8fb;
+    --card:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:#333;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.top-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:15px 25px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    height:80px;
+}
+
+.title-area h1{
+    color:var(--primary);
+    font-size:30px;
+}
+
+.title-area p{
+    color:#666;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:var(--primary);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav li{
+    margin:0;
+}
+
+nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:16px 22px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#7d1111;
+}
+
+/* PAGE TITLE */
+
+.page-title{
+    text-align:center;
+    padding:40px 20px 20px;
+}
+
+.page-title h2{
+    color:var(--primary);
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.page-title p{
+    color:#666;
+    font-size:17px;
+}
+
+/* CURRICULUM CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:30px 20px 50px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card i{
+    font-size:50px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:var(--primary);
+}
+
+.card p{
+    color:#666;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    color:white;
+    background:var(--primary);
+    padding:10px 22px;
+    border-radius:6px;
+}
+
+.card a:hover{
+    background:#7d1111;
+}
+
+/* FOOTER */
+
+footer{
+    background:#1f2937;
+    color:white;
+    margin-top:40px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:40px;
+}
+
+.footer-grid h3{
+    margin-bottom:15px;
+    color:#ffd54f;
+}
+
+.footer-grid a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.bottom-footer{
+    text-align:center;
+    padding:15px;
+    background:#111827;
+}
+
+@media(max-width:768px){
+
+.top-header{
+    justify-content:center;
+    text-align:center;
+}
+
+.logo-area{
+    flex-direction:column;
+}
+
+.title-area h1{
+    font-size:24px;
+}
+
+.page-title h2{
+    font-size:28px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="top-header">
+
+<div class="logo-area">
+
+<img src="logo.png" alt="Galgotias University Logo">
+
+<div class="title-area">
+<h1>Department of Computer Science & Engineering</h1>
+<p>School of Computer Science & Engineering @ Galgotias University</p>
+</div>
+
+</div>
+
+</div>
+
+<nav>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="curricula.html">Curricula</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="pulse.html">CSE Pulse</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="page-title">
+
+<h2>
+<i class="fas fa-book-open"></i>
+Curriculum Repository
+</h2>
+
+<p>
+Academic Year-wise Curriculum Archive of the Department of Computer Science & Engineering
+</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<i class="fas fa-folder-open"></i>
+<h3>Academic Year 2026–27</h3>
+<p>Latest curriculum, scheme of study and detailed syllabi.</p>
+<a href="https://drive.google.com/drive/folders/12UsJCiOctUOMXX5dJaBWibf_dl4Fr1Sy?usp=sharing">Open</a>
+</div>
+
+<div class="card">
+<i class="fas fa-folder-open"></i>
+<h3>Academic Year 2025–26</h3>
+<p>Curriculum, scheme of study and detailed syllabi.</p>
+<a href="https://drive.google.com/drive/folders/12UsJCiOctUOMXX5dJaBWibf_dl4Fr1Sy?usp=sharing">Open</a>
+</div>
+
+<div class="card">
+<i class="fas fa-folder-open"></i>
+<h3>Academic Year 2024–25</h3>
+<p>Curriculum, scheme of study and detailed syllabi.</p>
+<a href="2024-25-Curriculum.pdf">Open</a>
+</div>
+
+<div class="card">
+<i class="fas fa-folder-open"></i>
+<h3>Academic Year 2023–24</h3>
+<p>Curriculum, scheme of study and detailed syllabi.</p>
+<a href="2023-24-Curriculum.pdf">Open</a>
+</div>
+
+<div class="card">
+<i class="fas fa-folder-open"></i>
+<h3>Academic Year 2022–23</h3>
+<p>Curriculum, scheme of study and detailed syllabi.</p>
+<a href="2022-23-Curriculum.pdf">Open</a>
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>About DCSE</h3>
+<p>
+Department of Computer Science & Engineering<br>
+School of Computer Science & Engineering<br>
+Galgotias University
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<p><a href="index.html">Home</a></p>
+<p><a href="events.html">Events</a></p>
+<p><a href="pulse.html">CSE Pulse</a></p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>Greater Noida, Uttar Pradesh</p>
+<p>E-mail: ad.dcse@galgotiasuniversity.edu.in</p>
+</div>
+
+</div>
+
+<div class="bottom-footer">
+
+© 2026 SCSE @ Galgotias University
+
+</div>
+
+</footer>
+
+</body>
+</html>
