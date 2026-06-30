@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CSE Pulse | Department of Computer Science & Engineering</title>
+<title>CSE Pulse | DCSE Portal | SCSE @ Galgotias University</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +18,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 :root{
     --primary:#a41515;
+    --secondary:#c62828;
+    --dark:#222;
     --light:#f6f8fb;
+    --card:#ffffff;
 }
 
 *{
@@ -29,42 +33,99 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 body{
     font-family:'Poppins',sans-serif;
     background:var(--light);
-}
-
-header{
-    background:white;
-    text-align:center;
-    padding:25px;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-}
-
-header h1{
-    color:var(--primary);
-}
-
-header p{
-    color:#666;
-    margin-top:8px;
+    color:#333;
 }
 
 .container{
     width:95%;
-    max-width:1200px;
+    max-width:1400px;
     margin:auto;
-    padding:40px 0;
 }
 
-.section-title{
-    text-align:center;
-    color:var(--primary);
-    margin-bottom:35px;
-    font-size:32px;
+/* HEADER */
+
+header{
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
+
+.top-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:15px 25px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    height:80px;
+}
+
+.title-area h1{
+    color:var(--primary);
+    font-size:30px;
+}
+
+.title-area p{
+    color:#666;
+}
+
+/* NAVIGATION */
+
+nav{
+    background:var(--primary);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:16px 22px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#7d1111;
+}
+
+/* PAGE TITLE */
+
+.page-title{
+    text-align:center;
+    padding:40px 20px 15px;
+}
+
+.page-title h2{
+    color:var(--primary);
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.page-title p{
+    color:#666;
+    font-size:17px;
+}
+
+/* Cards */
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+    padding:25px 20px 50px;
 }
 
 .card{
@@ -83,47 +144,83 @@ header p{
 .card i{
     font-size:45px;
     color:var(--primary);
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .card h3{
+    color:var(--primary);
     margin-bottom:10px;
 }
 
 .card p{
     color:#666;
-    font-size:14px;
-    margin-bottom:20px;
+    margin-bottom:18px;
+    line-height:1.6;
 }
 
 .card a{
+    display:inline-block;
     text-decoration:none;
-    background:var(--primary);
     color:white;
+    background:var(--primary);
     padding:10px 20px;
     border-radius:6px;
-    display:inline-block;
 }
 
-.back{
-    text-align:center;
+.card a:hover{
+    background:#7d1111;
+}
+
+/* Footer */
+
+footer{
+    background:#1f2937;
+    color:white;
     margin-top:40px;
 }
 
-.back a{
-    text-decoration:none;
-    background:#444;
-    color:white;
-    padding:12px 25px;
-    border-radius:6px;
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:40px;
 }
 
-footer{
-    margin-top:50px;
-    background:#1f2937;
-    color:white;
+.footer-grid h3{
+    color:#ffd54f;
+    margin-bottom:15px;
+}
+
+.footer-grid a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.bottom-footer{
+    background:#111827;
     text-align:center;
-    padding:18px;
+    padding:15px;
+}
+
+@media(max-width:768px){
+
+.top-header{
+    justify-content:center;
+    text-align:center;
+}
+
+.logo-area{
+    flex-direction:column;
+}
+
+.title-area h1{
+    font-size:24px;
+}
+
+.page-title h2{
+    font-size:28px;
+}
+
 }
 
 </style>
@@ -134,101 +231,172 @@ footer{
 
 <header>
 
-<h1>CSE Pulse</h1>
+<div class="top-header">
 
-<p>
-Department of Computer Science & Engineering<br>
-Monthly Newsletter Archive
-</p>
+<div class="logo-area">
+
+<img src="logo.png" alt="Galgotias University Logo">
+
+<div class="title-area">
+<h1>Department of Computer Science & Engineering</h1>
+<p>School of Computer Science & Engineering @ Galgotias University</p>
+</div>
+
+</div>
+
+</div>
+
+<nav>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="curricula.html">Curricula</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="pulse.html">CSE Pulse</a></li>
+</ul>
+
+</nav>
 
 </header>
 
 <div class="container">
 
+<div class="page-title">
+
+<h2>
+<i class="fas fa-newspaper"></i>
+CSE Pulse
+</h2>
+
+<p>
+Monthly Newsletter Archive (2026)
+</p>
+
+</div>
+
 <div class="cards">
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>January 2026</h3>
-<p>CSE Pulse - January Edition</p>
+<p>CSE Pulse Newsletter - January Edition</p>
 <a href="Jan_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>February 2026</h3>
-<p>CSE Pulse - February Edition</p>
+<p>CSE Pulse Newsletter - February Edition</p>
 <a href="Feb_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>March 2026</h3>
-<p>CSE Pulse - March Edition</p>
-<a href="https://drive.google.com/file/d/1L7_6LgzWnU421HotJZsyvv5Y2C_8I489/view?usp=drive_link" target="_blank">View PDF</a>
+<p>CSE Pulse Newsletter - March Edition</p>
+<a href="Mar_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>April 2026</h3>
-<p>CSE Pulse - April Edition</p>
-<a href="https://drive.google.com/file/d/1QrQA_HZE7NYeVKzE-LL2LLw5wvnhArsg/view?usp=drive_link" target="_blank">View PDF</a>
+<p>CSE Pulse Newsletter - April Edition</p>
+<a href="Apr_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>May 2026</h3>
-<p>CSE Pulse - May Edition</p>
+<p>CSE Pulse Newsletter - May Edition</p>
 <a href="May_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>June 2026</h3>
-<p>CSE Pulse - June Edition</p>
+<p>CSE Pulse Newsletter - June Edition</p>
 <a href="Jun_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>July 2026</h3>
-<p>CSE Pulse - July Edition</p>
+<p>CSE Pulse Newsletter - July Edition</p>
 <a href="Jul_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>August 2026</h3>
-<p>CSE Pulse - August Edition</p>
+<p>CSE Pulse Newsletter - August Edition</p>
 <a href="Aug_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>September 2026</h3>
-<p>CSE Pulse - September Edition</p>
+<p>CSE Pulse Newsletter - September Edition</p>
 <a href="Sep_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>October 2026</h3>
-<p>CSE Pulse - October Edition</p>
+<p>CSE Pulse Newsletter - October Edition</p>
 <a href="Oct_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>November 2026</h3>
-<p>CSE Pulse - November Edition</p>
+<p>CSE Pulse Newsletter - November Edition</p>
 <a href="Nov_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 <div class="card">
-<i class="fas fa-newspaper"></i>
+<i class="fas fa-file-pdf"></i>
 <h3>December 2026</h3>
-<p>CSE Pulse - December Edition</p>
+<p>CSE Pulse Newsletter - December Edition</p>
 <a href="Dec_2026.pdf" target="_blank">View PDF</a>
 </div>
 
 </div>
+
+</div>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>About DCSE</h3>
+<p>
+Department of Computer Science & Engineering<br>
+School of Computer Science & Engineering<br>
+Galgotias University
+</p>
+</div>
+
+<div>
+<h3>Quick Links</h3>
+<p><a href="index.html">Home</a></p>
+<p><a href="curricula.html">Curricula</a></p>
+<p><a href="events.html">Events</a></p>
+</div>
+
+<div>
+<h3>Contact</h3>
+<p>Greater Noida, Uttar Pradesh</p>
+<p>E-mail: ad.dcse@galgotiasuniversity.edu.in</p>
+</div>
+
+</div>
+
+<div class="bottom-footer">
+© 2026 SCSE @ Galgotias University
+</div>
+
+</footer>
+
+</body>
+</html>
